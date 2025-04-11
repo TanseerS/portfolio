@@ -759,6 +759,25 @@ main {
 
 
 
+.download-btn{
+  position: relative;
+  background: var(--border-gradient-onyx);
+  color: var(--orange-yellow-crayola);
+  box-shadow: var(--shadow-3);
+  z-index: 1;
+  transition: var(--transition-1);
+}
+.download-btn::before{
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--bg-gradient-jet);
+  border-radius: inherit;
+}
+
+
+
+
 
 /*-----------------------------------*\
   #RESUME
@@ -1213,13 +1232,14 @@ textarea.form-input::-webkit-resizer { display: none; }
 .form-btn:hover::before { background: var(--bg-gradient-yellow-2); }
 
 .form-btn:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
+  opacity: 2;
+  
 }
 
-.form-btn:disabled:hover { background: var(--border-gradient-onyx); }
 
-.form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
+
+
+
 
 
 
